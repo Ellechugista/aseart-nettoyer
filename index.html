@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aseart Nettoyer - Servicios profesionales de limpieza residencial para casas y departamentos. Limpieza de polvo, baños, cocina, dormitorios y pisos. ¡Brillons pour vous!">
+    <title>Aseart Nettoyer | Brillons pour vous - Limpieza Residencial Profesional</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icono.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header class="navbar-header" id="navbar">
+        <div class="container navbar-container">
+            <a href="#inicio" class="brand-logo" aria-label="Aseart Nettoyer Inicio">
+                <span class="logo-icon">
+                    <img src="logo.png" alt="Logo Aseart Nettoyer">
+                </span>
+                <div class="logo-text">
+                    <span class="brand-name">Brillons pour vous</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu" aria-label="Navegación principal">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link active" data-i18n="nav.home">Inicio</a></li>
+                    <li><a href="#servicios" class="nav-link" data-i18n="nav.services">Servicios</a></li>
+                    <li><a href="#testimonios" class="nav-link" data-i18n="nav.testimonials">Testimonios</a></li>
+                    <li><a href="#contacto" class="nav-link" data-i18n="nav.contact">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="language-switcher">
+                    <button class="lang-toggle" id="lang-toggle" type="button" aria-label="Cambiar idioma">
+                        <span class="lang-current" data-lang-current>ES</span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                    <div class="lang-menu" id="lang-menu" role="menu" aria-label="Selector de idioma">
+                        <button class="lang-option active" type="button" data-lang="es" aria-pressed="true">Español</button>
+                        <button class="lang-option" type="button" data-lang="en" aria-pressed="false">English</button>
+                        <button class="lang-option" type="button" data-lang="fr" aria-pressed="false">Français</button>
+                    </div>
+                </div>
+
+                <a href="tel:12633884647" class="btn btn-call-header">
+                    <svg class="phone-icon-anim" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span data-i18n="header.callNow">Llamar Ahora</span>
+                </a>
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú de navegación" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section" id="inicio">
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <div class="badge-tag" data-i18n="hero.badge">
+                        Garantía de Pulcritud & Confianza
+                    </div>
+                    <h1 class="hero-title">
+                        Aseart Nettoyer <br>
+                        <span class="highlight-text">Brillons pour vous</span>
+                    </h1>
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">
+                        Transformamos su hogar en un espacio impecable, seguro y reluciente. Ofrecemos servicios de limpieza profesional adaptados al cuidado y tranquilidad que su familia y seres queridos merecen.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="tel:12633884647" class="btn btn-primary btn-lg">
+                            <svg class="phone-icon-anim" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <span data-i18n="hero.callButton">Llamar directo: #1 263 388 4647</span>
+                        </a>
+                        <a href="#servicios" class="btn btn-secondary btn-lg" data-i18n="hero.servicesButton">Ver Servicios</a>
+                    </div>
+
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <span class="check-icon">✓</span>
+                            <span data-i18n="hero.feature1">Personal Verificado</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="check-icon">✓</span>
+                            <span data-i18n="hero.feature2">Productos No Tóxicos</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="check-icon">✓</span>
+                            <span data-i18n="hero.feature3">Atención Personalizada</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80" alt="Personal profesional de Aseart Nettoyer realizando limpieza en hogar iluminado" class="hero-img">
+                        <div class="floating-card">
+                            <div class="card-icon">✨</div>
+                            <div>
+                                <strong data-i18n="hero.cardTitle">100% Satisfacción</strong>
+                                <p data-i18n="hero.cardText">Hogares relucientes todos los días</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section" id="servicios">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle" data-i18n="services.subtitle">Nuestra Especialidad</span>
+                    <h2 class="section-title" data-i18n="services.title">Servicios Integrales de Limpieza</h2>
+                    <p class="section-description" data-i18n="services.description">
+                        Nos encargamos de cada rincón de su casa privada para que usted disfrute de su tiempo con total comodidad y serenidad.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card reveal">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=600&q=80" alt="Limpieza y eliminación de polvo en superficies de madera y muebles">
+                            <div class="service-tag" data-i18n="service1.tag">Polvo & Desinfección</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="service-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 12h18M6 6l12 12M6 18L18 6"/></svg>
+                            </div>
+                            <h3 data-i18n="service1.title">Limpieza de Polvo y Superficies</h3>
+                            <p data-i18n="service1.text">Eliminación meticulosa de polvo en muebles, repisas, marcos, electrodomésticos y zonas de difícil acceso con paños de microfibra de alta eficiencia.</p>
+                        </div>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="Aseo profundo e higienización de baños residenciales">
+                            <div class="service-tag" data-i18n="service2.tag">Higienización Total</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="service-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            </div>
+                            <h3 data-i18n="service2.title">Aseo Profundo de Baños</h3>
+                            <p data-i18n="service2.text">Desinfección de azulejos, inodoros, lavamanos, duchas y espejos. Eliminación de sarro, humedad y bacterias con insumos seguros de aroma fresco.</p>
+                        </div>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80" alt="Limpieza y desengrase profundo de cocina">
+                            <div class="service-tag" data-i18n="service3.tag">Cocina Impecable</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="service-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2M7 2v20M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg>
+                            </div>
+                            <h3 data-i18n="service3.title">Limpieza Integral de Cocina</h3>
+                            <p data-i18n="service3.text">Limpieza exterior e interior de estufas, campanas, encimeras, fregaderos y gabinetes. Desengrase efectivo para un ambiente higiénico.</p>
+                        </div>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=600&q=80" alt="Acondicionamiento y tendido perfecto de camas y dormitorios">
+                            <div class="service-tag" data-i18n="service4.tag">Dormitorios</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="service-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16M2 8h20M2 17h20M22 10v10M6 13h12"/></svg>
+                            </div>
+                            <h3 data-i18n="service4.title">Tendido de Camas & Recámaras</h3>
+                            <p data-i18n="service4.text">Cambio de lencería de cama, tendido profesional, orden visual, sacudido de colchones y aireación completa para un descanso óptimo.</p>
+                        </div>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=600&q=80" alt="Cuidado y mopeado de pisos de madera y cerámica">
+                            <div class="service-tag" data-i18n="service5.tag">Brillo Especial</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="service-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                            <h3 data-i18n="service5.title">Aspirado y Trapeado de Pisos</h3>
+                            <p data-i18n="service5.text">Tratamiento especializado para pisos de madera, cerámica, mármol o alfombras. Aspirado profundo y trapeado con acabados que resaltan el brillo.</p>
+                        </div>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=600&q=80" alt="Servicio de aseo general y profundo personalizado para casas">
+                            <div class="service-tag" data-i18n="service6.tag">Mantenimiento Global</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="service-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 12h18"/></svg>
+                            </div>
+                            <h3 data-i18n="service6.title">Aseo General y Limpieza Profunda</h3>
+                            <p data-i18n="service6.text">Jornadas periódicas o eventuales adaptadas a sus necesidades específicas. Mantenimiento completo de salas, comedores y pasillos.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section" id="testimonios">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle" data-i18n="testimonials.subtitle">Reputación y Confianza</span>
+                    <h2 class="section-title" data-i18n="testimonials.title">Lo que Opinan Nuestros Clientes</h2>
+                    <p class="section-description" data-i18n="testimonials.description">
+                        La tranquilidad de nuestros clientes es nuestro mejor respaldo. Conozca las experiencias de familias que confían en Aseart Nettoyer.
+                    </p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <article class="testimonial-card reveal">
+                        <div class="stars" aria-label="Calificación 5 de 5 estrellas">★★★★★</div>
+                        <blockquote class="testimonial-text" data-i18n="testimonial1.text">
+                            "Como persona mayor, encontrar un servicio de limpieza puntual, educado y meticuloso era fundamental para mí. En Aseart Nettoyer dejan mis baños y cocina relucientes cada semana."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MR</div>
+                            <div class="author-info">
+                                <strong>Marta Rodríguez</strong>
+                                <span data-i18n="testimonial1.role">Ama de casa • 64 años</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card reveal">
+                        <div class="stars" aria-label="Calificación 5 de 5 estrellas">★★★★★</div>
+                        <blockquote class="testimonial-text" data-i18n="testimonial2.text">
+                            "Con el trabajo y los niños, mantener la casa limpia era un reto constante. El equipo llega con puntualidad, limpia el polvo de cada rincón y deja las camas tendidas como de hotel."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">CG</div>
+                            <div class="author-info">
+                                <strong>Carlos Gómez</strong>
+                                <span data-i18n="testimonial2.role">Padre de familia</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card reveal">
+                        <div class="stars" aria-label="Calificación 5 de 5 estrellas">★★★★★</div>
+                        <blockquote class="testimonial-text" data-i18n="testimonial3.text">
+                            "Solicitamos la limpieza profunda antes de una reunión familiar y el resultado superó nuestras expectativas. El piso quedó con un brillo impecable. El número directo ayuda mucho."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">EL</div>
+                            <div class="author-info">
+                                <strong>Elena Larrea</strong>
+                                <span data-i18n="testimonial3.role">Residente particular</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contacto">
+            <div class="container">
+                <div class="contact-card-wrapper reveal">
+                    <div class="contact-info">
+                        <span class="badge-tag green" data-i18n="contact.badge">Atención Directa e Inmediata</span>
+                        <h2 data-i18n="contact.title">¿Listo para disfrutar de un hogar reluciente?</h2>
+                        <p data-i18n="contact.description">
+                            Estamos a una sola llamada de distancia. Comuníquese directamente con nuestro equipo para cotizaciones sin compromiso o para programar su servicio.
+                        </p>
+
+                        <div class="direct-call-box">
+                            <span class="call-title" data-i18n="contact.callTitle">Número de Atención Telefónica</span>
+                            <a href="tel:12633884647" class="phone-number-btn" id="main-phone-btn">
+                                <svg class="phone-icon-anim" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                <span>#1 263 388 4647</span>
+                            </a>
+                            <small class="call-note">
+                                <span class="online-indicator"></span> <span data-i18n="contact.callNote">Toca para realizar la llamada directo desde tu dispositivo</span>
+                            </small>
+                        </div>
+
+                        <div class="contact-highlights">
+                            <div class="highlight-point">
+                                <div class="icon-circle">🕒</div>
+                                <div>
+                                    <strong data-i18n="contact.hoursTitle">Horarios Flexibles</strong>
+                                    <p data-i18n="contact.hoursText">Lunes a Sábado de 7:00 AM a 7:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="highlight-point">
+                                <div class="icon-circle">📍</div>
+                                <div>
+                                    <strong data-i18n="contact.coverageTitle">Zona de Cobertura</strong>
+                                    <p data-i18n="contact.coverageText">Servicio exclusivo a casas y residencias privadas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <div class="form-header-badge">
+                            <h3 data-i18n="form.headerTitle">Solicitar Presupuesto o Información</h3>
+                            <p data-i18n="form.headerText">Déjenos un mensaje y le responderemos enseguida.</p>
+                        </div>
+
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="nombre">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                    <span data-i18n="form.nameLabel">Nombre Completo *</span>
+                                </label>
+                                <div class="input-wrapper">
+                                    <input type="text" id="nombre" name="nombre" data-i18n-placeholder="form.namePlaceholder" placeholder="Ej. María Fernández" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="telefono">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                    <span data-i18n="form.phoneLabel">Teléfono de Contacto *</span>
+                                </label>
+                                <div class="input-wrapper">
+                                    <input type="tel" id="telefono" name="telefono" data-i18n-placeholder="form.phonePlaceholder" placeholder="Ej. #1 263 388 4647" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="servicio">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                    <span data-i18n="form.serviceLabel">Tipo de Servicio Requerido</span>
+                                </label>
+                                <div class="input-wrapper">
+                                    <select id="servicio" name="servicio">
+                                        <option value="general" data-i18n-option="form.optionGeneral">Aseo General de Casa</option>
+                                        <option value="profunda" data-i18n-option="form.optionDeep">Limpieza Profunda Detallada</option>
+                                        <option value="polvo" data-i18n-option="form.optionDust">Polvo y Muebles Delicados</option>
+                                        <option value="banos-cocina" data-i18n-option="form.optionBathroomKitchen">Desinfección de Baños y Cocina</option>
+                                        <option value="otro" data-i18n-option="form.optionOther">Otro Servicio Especial</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mensaje">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                                    <span data-i18n="form.messageLabel">Detalles o Comentarios</span>
+                                </label>
+                                <div class="input-wrapper">
+                                    <textarea id="mensaje" name="mensaje" rows="3" data-i18n-placeholder="form.messagePlaceholder" placeholder="Indíquenos el número de recámaras o requerimientos específicos..."></textarea>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block btn-animated">
+                                <span data-i18n="form.submit">Enviar Solicitud</span>
+                                <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top-accent"></div>
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="logo-icon white-bg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#054895" stroke-width="2.4"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+                    </span>
+                    <div class="logo-text">
+                        <span class="brand-name white">Aseart Nettoyer</span>
+                        <span class="brand-slogan opacity-8">Brillons pour vous</span>
+                    </div>
+                </div>
+                <p class="brand-desc" data-i18n="footer.brandDesc">
+                    Especialistas en la limpieza y cuidado meticuloso de casas privadas. Calidad, discreción y la máxima pulcritud en cada visita.
+                </p>
+                <div class="trust-badge-footer">
+                    <span class="shield-icon">🛡️</span>
+                    <span data-i18n="footer.trust">Servicio Seguro & Asegurado</span>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4 data-i18n="footer.quickNav">Navegación Rápida</h4>
+                <ul>
+                    <li><a href="#inicio"><span class="link-arrow">›</span> <span data-i18n="footer.home">Inicio</span></a></li>
+                    <li><a href="#servicios"><span class="link-arrow">›</span> <span data-i18n="footer.services">Servicios de Limpieza</span></a></li>
+                    <li><a href="#testimonios"><span class="link-arrow">›</span> <span data-i18n="footer.testimonials">Opiniones de Clientes</span></a></li>
+                    <li><a href="#contacto"><span class="link-arrow">›</span> <span data-i18n="footer.contact">Contactar Ahora</span></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4 data-i18n="footer.direct">Atención Directa</h4>
+                <div class="footer-card-call">
+                    <p class="call-hint" data-i18n="footer.callHint">¿Prefieres llamar por teléfono?</p>
+                    <a href="tel:12633884647" class="footer-phone-btn">
+                        <svg class="phone-icon-anim" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <span>#1 263 388 4647</span>
+                    </a>
+                    <span class="service-availability" data-i18n="footer.availability">● Respuesta inmediata en horario hábil</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p data-i18n="footer.rights">&copy; 2026 Aseart Nettoyer. Todos los derechos reservados.</p>
+                <span class="slogan-tag">Brillons pour vous ✨</span>
+            </div>
+        </div>
+    </footer>
+
+    <a href="tel:12633884647" class="floating-call-btn" aria-label="Llamar directamente al #1 263 388 4647">
+        <span class="pulse-ring"></span>
+        <svg class="phone-icon-anim" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="floating-label" data-i18n="floating.call">Llamar Directo</span>
+    </a>
+
+    <script src="java.js"></script>
+</body>
+</html>
