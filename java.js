@@ -428,7 +428,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    const contactForm = document.getElementById('contact-form');
+    /*const contactForm = document.getElementById('contact-form');
 
     if (contactForm) {
         contactForm.addEventListener('submit', (event) => {
@@ -466,11 +466,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1200);
         });
     }
-
+*/
     const phoneButtons = document.querySelectorAll('a[href^="tel:"]');
     phoneButtons.forEach((button) => {
         button.addEventListener('click', () => {
-            console.log('Iniciando llamada telefónica hacia #1 263 388 4647');
+            console.log('Iniciando llamada telefónica hacia +1 263 388 4647');
         });
     });
 });
